@@ -1,0 +1,204 @@
+:root {
+    --brand: #4D5AE5;
+    --brand-background: #2E2F42;
+    --page: #FFFFFF;
+    --text: #434455;
+    --logo-down: #F4F4FD;
+    --border: #E7E9FC;
+    --button-filter-hover: #404BBF;   
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text);
+    background-color: var(--page);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    font-style: normal;
+}
+
+.logo-accent {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand);
+}
+
+.logo-up {
+    color: var(--brand-background);
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-down {
+    color: var(--logo-down);
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+.menu-link:focus, .menu-link:active {
+    color: var(--button-filter-hover);
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-background);
+}
+
+.menu-link:hover, .menu-link:active {
+    color: var(--button-filter-hover);
+}
+
+.menu-list > a {
+    font-weight: 500;
+    color: var(--brand-background);
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.address.list > a {
+    color: var(--text);
+}
+
+.address-link {
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+.address-link:hover {
+    color: var(--button-filter-hover);
+}
+
+.address-link:focus {
+    color: var(--button-filter-hover);
+}
+
+.hero {
+    background-color: var(--brand-background);
+}
+
+.title-hero {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--page);
+}
+
+.order-button {
+    font-family: inherit;
+    background-color: var(--brand);
+    color: var(--page);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: var(--button-filter-hover);
+}
+
+.order-button:focus {
+    background-color: var(--button-filter-hover);
+}
+
+.third-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brand-background);
+    text-transform: capitalize;
+}
+
+.advantages-paragraf {
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+.title-we-doing, .title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--brand-background);
+}
+
+.team {
+    background-color: var(--logo-down);
+}
+
+.item-team {
+    background: var(--page);
+}
+
+.footer-section {
+    background-color: var(--brand-background);
+}
+
+.footer-paragraf {
+    color:var(--logo-down);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.button-filter {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    background-color: var(--logo-down);
+    border: 1px solid var(--border);
+    color: var(--brand);
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.button-filter:hover {
+    background-color: var(--button-filter-hover);
+    color: var(--page);
+}
+
+.button-filter:focus {
+    background-color: var(--button-filter-hover);
+    color: var(--page);
+}
+
+.button-filter:active {
+    background-color: var(--brand-background);
+}
+
+.img-item {
+    border: 1px solid var(--border);
+}
