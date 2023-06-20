@@ -8,6 +8,16 @@
     --button-filter-hover: #404BBF;   
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -20,12 +30,15 @@ body {
     text-decoration: none;
 }
 
-.link {
-    text-decoration: none;
+.container {
+    width: 1158px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
 }
 
-.list {
-    list-style: none;
+.container-header {
+    display: flex;
 }
 
 a {
@@ -48,12 +61,18 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
+.logo-header {
+margin-right: 76px;
+}
+
 .logo-down {
     color: var(--logo-down);
 }
 
 .menu-list {
-    list-style-type: none;
+    display: flex;
+    width: 261px;
+    gap: 40px;
 }
 
 .menu-link:focus, .menu-link:active {
@@ -77,8 +96,14 @@ a {
     color: var(--brand-background);
 }
 
+.address {
+    display: flex;
+    gap: 40px;
+}
+
 .address-list {
     font-style: normal;
+      
 }
 
 .address.list > a {
@@ -109,6 +134,7 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--page);
+
 }
 
 .order-button {
