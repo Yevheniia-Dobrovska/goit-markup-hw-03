@@ -30,6 +30,21 @@ body {
     text-decoration: none;
 }
 
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
 .container {
     width: 1158px;
     margin-right: auto;
@@ -39,11 +54,16 @@ body {
 
 .container-header {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    align-items: center;
+}
+    
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
-a {
-    font-style: normal;
-}
 
 .logo-accent {
     font-family: 'Raleway', sans-serif;
@@ -54,11 +74,13 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand);
+    padding: 24px 0;
 }
 
 .logo-up {
     color: var(--brand-background);
     font-family: 'Raleway', sans-serif;
+    padding: 24px 0;
 }
 
 .logo-header {
@@ -71,8 +93,11 @@ margin-right: 76px;
 
 .menu-list {
     display: flex;
-    width: 261px;
     gap: 40px;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .menu-link:focus, .menu-link:active {
@@ -85,6 +110,7 @@ margin-right: 76px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-background);
+    padding: 24px 0;
 }
 
 .menu-link:hover, .menu-link:active {
@@ -103,7 +129,7 @@ margin-right: 76px;
 
 .address-list {
     font-style: normal;
-      
+    margin-left: auto; 
 }
 
 .address.list > a {
@@ -113,6 +139,7 @@ margin-right: 76px;
 .address-link {
     letter-spacing: 0.02em;
     color: var(--text);
+    padding: 24px 0;
 }
 
 .address-link:hover {
@@ -127,6 +154,13 @@ margin-right: 76px;
     background-color: var(--brand-background);
 }
 
+.container-hero {
+    padding-top: 12px;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+
 .title-hero {
     font-weight: 700;
     font-size: 56px;
@@ -134,6 +168,7 @@ margin-right: 76px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--page);
+
 
 }
 
@@ -145,6 +180,11 @@ margin-right: 76px;
     letter-spacing: 0.04em;
     line-height: 1.5;
     cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    align-items: center;
+    
 }
 
 .order-button:hover {
@@ -154,6 +194,26 @@ margin-right: 76px;
 .order-button:focus {
     background-color: var(--button-filter-hover);
 }
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container-advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 
 .third-title {
     font-weight: 500;
@@ -169,6 +229,12 @@ margin-right: 76px;
     color: var(--text);
 }
 
+
+.container-we-doing {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .title-we-doing, .title-team {
     font-weight: 700;
     font-size: 36px;
@@ -177,6 +243,10 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--brand-background);
+}
+
+.container-team {
+    padding-top: 60px;
 }
 
 .team {
