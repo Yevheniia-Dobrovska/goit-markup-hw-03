@@ -395,5 +395,5 @@ max-width: 264px;
 
 .img-item {
     border: 1px solid var(--border);
-    width: calc((100%-48px)/3);
+    width: calc((100%-72px)/4);
 }
