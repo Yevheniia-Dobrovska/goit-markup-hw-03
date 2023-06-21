@@ -54,8 +54,6 @@ a {
 
 .container-header {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 12px;
     align-items: center;
 }
     
@@ -63,7 +61,6 @@ a {
     display: flex;
     align-items: center;
 }
-
 
 .logo-accent {
     font-family: 'Raleway', sans-serif;
@@ -75,6 +72,7 @@ a {
     text-transform: uppercase;
     color: var(--brand);
     padding: 24px 0;
+    margin-right: 76px;
 }
 
 .logo-up {
@@ -152,6 +150,7 @@ margin-right: 76px;
 
 .hero {
     background-color: var(--brand-background);
+    padding: 188px 0;
 }
 
 .container-hero {
@@ -168,8 +167,10 @@ margin-right: 76px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--page);
-
-
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .order-button {
@@ -183,8 +184,8 @@ margin-right: 76px;
     display: block;
     margin: auto;
     border-radius: 4px;
-    align-items: center;
-    
+    padding: 16px 32px;
+    min-width: 169px;    
 }
 
 .order-button:hover {
@@ -209,9 +210,18 @@ margin-right: 76px;
     overflow: hidden;
 }
 
+.list-advantages {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages {
+    margin: 0;
+}
+
 .container-advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -222,6 +232,10 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     color: var(--brand-background);
     text-transform: capitalize;
+    margin-bottom: 8px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .advantages-paragraf {
@@ -229,13 +243,25 @@ margin-right: 76px;
     color: var(--text);
 }
 
-
-.container-we-doing {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.item-advantages {
+    width: calc((100%-72px)/4);
 }
 
-.title-we-doing, .title-team {
+.container-we-doing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.list-we-doing {
+    display: flex;
+    gap: 24px;
+}
+
+.item-we-doing {
+    width: calc((100%-48px)/3);
+}
+
+.title-we-doing {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -243,32 +269,90 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--brand-background);
+    min-width: 323px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+
+}
+
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--brand-background);
+    min-width: 162px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
 }
 
 .container-team {
-    padding-top: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team {
     background-color: var(--logo-down);
 }
 
+.list-team {
+    display: flex;
+    gap: 24px;
+}
+
 .item-team {
     background: var(--page);
+    width: calc((100%-72px)/4);
 }
+
+.third-team-title, .team-paragraf {
+    text-align: center;
+}
+
 
 .footer-section {
     background-color: var(--brand-background);
 }
 
+.container-footer {
+display: block;
+align-items: center;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
 .footer-paragraf {
-    color:var(--logo-down);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+color:var(--logo-down);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+max-width: 264px;
+}
+
+.container-filter {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    border-top: 1px solid var(--border);
+}
+
+.buttons-list {
+    display: flex;
+    gap: 24px;
+}
+
+.button-item {
+    width: calc((100%-96px)/5);
 }
 
 .button-filter {
@@ -279,6 +363,13 @@ margin-right: 76px;
     color: var(--brand);
     cursor: pointer;
     line-height: 1.5;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding: 12px 24px;
+    min-width: 69px;
 }
 
 .button-filter:hover {
@@ -295,6 +386,14 @@ margin-right: 76px;
     background-color: var(--brand-background);
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 48px;
+}
+
 .img-item {
     border: 1px solid var(--border);
+    width: calc((100%-48px)/3);
 }
