@@ -184,7 +184,9 @@ margin-right: 76px;
     margin: auto;
     border-radius: 4px;
     padding: 16px 32px;
-    min-width: 169px;    
+    min-width: 169px;
+    height: 56px; 
+    border: none;
 }
 
 .order-button:hover {
@@ -216,8 +218,7 @@ margin-right: 76px;
 
 .advantages {
     margin: 0;
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
 
 .third-title {
@@ -281,6 +282,7 @@ margin-right: 76px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .team {
@@ -296,9 +298,14 @@ margin-right: 76px;
 .item-team {
     background: var(--page);
     width: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.third-team-title, .team-paragraf {
+.third-team-title  {
+    text-align: center;
+}
+
+.team-paragraf {
     text-align: center;
 }
 
@@ -308,7 +315,7 @@ margin-right: 76px;
 
 .footer-section {
     background-color: var(--brand-background);
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .container-footer {
@@ -328,7 +335,17 @@ max-width: 264px;
 padding-bottom: 100px;
 }
 
-.container-header {
+.logo-accent.link {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-down.link {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.page-header {
     border-bottom: 1px solid var(--border);
 }
 
@@ -372,11 +389,13 @@ padding-bottom: 100px;
 .button-filter:hover {
     background-color: var(--button-filter-hover);
     color: var(--page);
+    border: 1px solid transparent;
 }
 
 .button-filter:focus {
     background-color: var(--button-filter-hover);
     color: var(--page);
+    border: 1px solid transparent;
 }
 
 .button-filter:active {
@@ -391,7 +410,7 @@ padding-bottom: 100px;
 }
 
 .img-item {
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .card-portfolio {
