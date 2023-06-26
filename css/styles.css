@@ -80,14 +80,6 @@ a {
     padding: 24px 0;
 }
 
-.logo-header {
-margin-right: 76px;
-}
-
-.logo-down {
-    color: var(--logo-down);
-}
-
 .menu-list {
     display: flex;
     gap: 40px;
@@ -329,17 +321,16 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 max-width: 264px;
-padding-bottom: 100px;
 }
 
-.logo-accent.link {
+.logo-down {
     display: inline-block;
     margin-bottom: 16px;
+    color: var(--logo-down);
 }
 
-.logo-down.link {
-    display: inline-block;
-    margin-bottom: 16px;
+.logo-accent.down {
+    margin-right: 0;
 }
 
 .page-header {
@@ -362,9 +353,7 @@ padding-bottom: 100px;
     justify-content: center;
 }
 
-.button-item {
-    width: calc((100% - 96px) / 5);
-}
+
 
 .button-filter {
     font-weight: 500;
