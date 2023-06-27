@@ -333,6 +333,12 @@ max-width: 264px;
     margin-right: 0;
     display: inline-block;
     margin-bottom: 16px;
+    padding: 0;
+}
+
+.logo-down .link {
+    padding: 0;
+    margin-bottom: 16px;
 }
 
 .page-header {
